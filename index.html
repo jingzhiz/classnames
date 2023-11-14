@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="./src/index.js"></script>
+
+  <script>
+    console.log(classnames('foo', 'bar'))
+    console.log(classnames('foo', { bar: true }))
+    console.log(classnames({ 'foo-bar': true }))
+    console.log(classnames({ 'foo-bar': false }))
+    console.log(classnames({ foo: true }, { bar: true }))
+    console.log(classnames({ foo: true, bar: true }))
+    console.log(classnames(['foo'], 'bar'))
+    console.log(classnames(['foo'], ['bar']))
+    console.log(classnames('hello', 1000, ['foo', 'bar'], { key: true, 'show hidden': true }))
+  </script>
+</body>
+</html>
